@@ -1,58 +1,87 @@
-
-body{
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: hsl(0, 0%, 95%);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-#calculator{
-    font-family: Arial, sans-serif;
-    background-color: hsl(0, 0%, 15%);
-    border-radius: 40px;
-    max-width: 500px;
-    overflow: hidden;
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #0a0a0a, #3a3a3a);
 }
-#display{
-    width: 100%;
-    padding: 20px;
-    font-size: 5rem;
-    text-align: left;
+.calculator {
+  border: 1px solid #717377;
+  padding: 20px;
+  border-radius: 16px;
+  background: black;
+  box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+}
+input{
+    width: 320px;
     border: none;
+    padding: 24px;
+    margin: 10px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.1);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
     color: white;
-    background-color: hsl(0, 0%, 20%);
 }
-#keys{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 10px;
-    padding: 25px;
+input::placeholder{
+    color: white;
 }
 button{
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
     border: none;
-    background-color: hsl(0, 0%, 30%);
+    width: 60px;
+    height: 60px;
+    margin:10px;
+    border-radius: 50%;
+    background: #1f1e1e;
     color: white;
-    font-size: 3rem;
-    font-weight: bold;
+    font-size: 25px;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1);
     cursor: pointer;
 }
-button:hover{
-    background-color: hsl(0, 0%, 40%);
+.operator{
+    background-color: #fb7c14;
 }
-button:active{
-    background-color: hsl(0, 0%, 50%);
-
+.operator:hover{
+    background-color: #ec8836;
 }
-.operator-btn{
-    background-color: hsl(35, 100%, 55%);
+.operator:active{
+    background-color: #e1985c;
 }
-.operator-btn:hover{
-    background-color: hsl(35, 100%, 65%);
+.op{
+    background-color: #5d5d5d;
+    color: #0a0a0a;
 }
-.operator-btn:active{
-    background-color: hsl(35, 100%, 75%);
+.op:hover{
+    background-color: #787070;
+    color: #0a0a0a;
+}
+.op:active{
+    background-color: #a9a3a3;
+    color: #0a0a0a;
+}
+.btn:hover{
+    background-color: rgb(54, 54, 54);
+}
+.btn:active{
+    background-color: rgb(45, 45, 45);
+}
+.btn-zero{
+    width: 145px;
+    border-radius: 50px;
+    text-align: center;
+}
+.btn-zero:hover{
+    background-color: rgb(54, 54, 54);
+}
+.btn-zero:active{
+    background-color: rgb(45, 45, 45);
 }
